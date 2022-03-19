@@ -59,8 +59,6 @@ namespace intralinkdemo
             {
 
 
-
-
                 connection_admin_insert.Open();
                 string Query_insert = "insert into tbl_users_final ([Username],[Password],[Name_User],[Surname_User],[Email],[Position],[Pay]) values ('" + this.UserNameTextBox.Text + "','" + this.UserAddPasswordField.Text + "','" + this.Name_User_Textbox.Text + "','"+this.Surname_Textbox.Text+"','"+this.Email_textbox.Text+ "','" + this.Position_Textbox.Text + "','" + this.Salary_textbox.Text + "')";
                 OleDbCommand cmd_admin_insert = new OleDbCommand(Query_insert, connection_admin_insert);
