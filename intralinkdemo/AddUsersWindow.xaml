@@ -8,7 +8,10 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-       ResizeMode="NoResize"
+       MaxHeight="450"
+        MaxWidth="400"
+        MinHeight="450"
+        MinWidth="400"
         Title="AddUsersWindow" Height="450" Width="400">
     <Grid>
         <Image HorizontalAlignment="Left" Height="159" Margin="10,10,0,0" VerticalAlignment="Top" Width="161" Source="/Images/intrlink_logo_blue.png"/>
