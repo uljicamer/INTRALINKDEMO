@@ -22,6 +22,17 @@ namespace intralinkdemo
         public adminPanel()
         {
             InitializeComponent();
+
+        }
+
+        private void exitButtonAdminPanel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ExpanderUserButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
