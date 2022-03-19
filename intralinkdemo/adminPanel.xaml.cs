@@ -64,7 +64,6 @@ namespace intralinkdemo
                 admin_data_adapter_view.Update(dt);
 
                 data_grid_view.Visibility = Visibility.Visible;
-
                 connection_admin_view.Close();
 
 
