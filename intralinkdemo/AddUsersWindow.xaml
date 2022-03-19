@@ -22,8 +22,8 @@
         <TextBox x:Name="Position_Textbox" HorizontalAlignment="Center" Margin="0,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" FontFamily="Roboto Black" materialDesign:HintAssist.Hint="Enter Position" HorizontalContentAlignment="Center"/>
         <TextBox x:Name="Salary_textbox" HorizontalAlignment="Center" Margin="0,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" FontFamily="Roboto Black" materialDesign:HintAssist.Hint="Enter salary" HorizontalContentAlignment="Center"/>
         <Label x:Name="Registration_Label" Content="User Registration" HorizontalAlignment="Left" Margin="241,3,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Height="35" Width="194"/>
-        <Button x:Name="UserAddConfirmButton" Content="Add" HorizontalAlignment="Left" Margin="91,376,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="#FF0300B5" FontFamily="Roboto Black"/>
-        <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="241,376,0,0" VerticalAlignment="Top" Width="68" Background="#FF0300B5" FontSize="14" FontFamily="Roboto Black"/>
+        <Button x:Name="UserAddConfirmButton" Content="Add" HorizontalAlignment="Left" Margin="91,376,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="#FF0300B5" FontFamily="Roboto Black" Click="UserAddConfirmButton_Click"/>
+        <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="241,376,0,0" VerticalAlignment="Top" Width="68" Background="#FF0300B5" FontSize="14" FontFamily="Roboto Black" Click="ClearButton_Click"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="348,5,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" FontFamily="Roboto Black" Height="26" Width="40" Foreground="#FF0300B5" Click="Button_Click"/>
 
 
