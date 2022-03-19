@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         WindowStyle="None"
+        MaxHeight="420"
+        MaxWidth="800"
+        MinHeight="420"
+        MinWidth="800"
         WindowStartupLocation="CenterScreen"
         Title="UserListWindow" Height="420" Width="800">
     <Grid>

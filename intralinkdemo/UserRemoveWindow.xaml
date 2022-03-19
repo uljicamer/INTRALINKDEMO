@@ -9,9 +9,12 @@
         mc:Ignorable="d"
         Title="UserRemoveWindow" Height="493" Width="400"
         WindowStyle="None"
-        ResizeMode="NoResize"
+        MaxHeight="493"
+        MaxWidth="400"
+        MinHeight="493"
+        MinWidth="400"
         >
-    <Grid Background="#FFEDEBEB">
+    <Grid Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="69*"/>
             <ColumnDefinition Width="31*"/>
