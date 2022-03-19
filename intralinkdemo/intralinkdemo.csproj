@@ -72,6 +72,9 @@
     <Compile Include="userPanel.xaml.cs">
       <DependentUpon>userPanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserRemoveWindow.xaml.cs">
+      <DependentUpon>UserRemoveWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddUsersWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -100,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="userPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserRemoveWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

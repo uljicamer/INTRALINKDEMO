@@ -57,5 +57,10 @@ namespace intralinkdemo
         {
             new AddUsersWindow().Show();
         }
+
+        private void ExpanderRemoveUsersButton_Click(object sender, RoutedEventArgs e)
+        {
+            new UserRemoveWindow().Show();  
+        }
     }
 }
