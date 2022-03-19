@@ -81,5 +81,10 @@ namespace intralinkdemo
             
 
         }
+
+        private void ExpanderAddUserButton_Click(object sender, RoutedEventArgs e)
+        {
+            new AddUsersWindow().Show();
+        }
     }
 }
