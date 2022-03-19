@@ -11,9 +11,9 @@
         Title="UserListWindow" Height="420" Width="800">
     <Grid>
         <Image x:Name="IntraLinkLogo" HorizontalAlignment="Left" Height="242" Margin="10,10,0,0" VerticalAlignment="Top" Width="239" Source="/Images/intrlink_logo_blue.png"/>
-        <DataGrid x:Name="UserListDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,106,22,89" Background="{x:Null}" FontFamily="Roboto Black" Foreground="#DD000000"/>
-        <Button x:Name="ExitButtonUserListWindow" Content="EXIT" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}"/>
-        <Button x:Name="RefreshUserListButton" Content="REFRESH USERS" HorizontalAlignment="Left" Margin="630,357,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="#FF151CC0" FontFamily="Roboto Black"/>
+        <DataGrid x:Name="data_grid_view" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,106,22,89" Background="{x:Null}" FontFamily="Roboto Black" Foreground="#DD000000" IsReadOnly="True"/>
+        <Button x:Name="ExitButtonUserListWindow" Content="EXIT" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Click="ExitButtonUserListWindow_Click"/>
+        <Button x:Name="RefreshUserListButton" Content="REFRESH USERS" HorizontalAlignment="Left" Margin="630,357,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Background="#FF151CC0" FontFamily="Roboto Black" Click="RefreshUserListButton_Click"/>
 
 
     </Grid>
