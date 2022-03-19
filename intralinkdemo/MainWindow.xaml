@@ -5,9 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:intralinkdemo"
         mc:Ignorable="d"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
         Title="MainWindow" Height="750" Width="400">
+
     <Grid>
-        <Button x:Name="exitButton" Content="EXIT" HorizontalAlignment="Left" Margin="169,305,0,0" VerticalAlignment="Top" Height="62" Width="88" Click="exitButton_Click"/>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="375"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="15" Grid.RowSpan="2" BorderBrush="Black">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="White" Offset="0.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Image x:Name="intralinkLogoLogin" Source="/Images/intrlink_logo_blue.png" Margin="42,-139,42,329"/>
+            <!-- OVDJE OVE TEXTBOXOVE TREBA DATA BINDEOVAT ZA USERNAME I PW U BAZI PODATAKA VALJDA -->
+        </Border>
+        <Button x:Name="ExitButton" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-2.6,0.531" Height="41" Width="41" BorderThickness="0,0,0,0" SnapsToDevicePixels="True" BorderBrush="{x:Null}" Margin="343,10,0,0" Click="exitButton_Click" Background="White" Foreground="#FF0300AB"/>
+        <TextBox x:Name="UserName" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="31" Foreground="Black" FontFamily="Roboto Black" FontSize="22" FontWeight="Light" Opacity="0.5" HorizontalContentAlignment="Center" Margin="0,10,0,0" materialDesign:HintAssist.Hint="Enter Username" CaretBrush="#FFF6F2FD"
+                 BorderBrush="{DynamicResource MaterialDesignDivider}" />
+
+        <PasswordBox x:Name="PasswordField" HorizontalAlignment="Center" Margin="0,79,0,0" Grid.Row="1" VerticalAlignment="Top" Width="326" Foreground="Black" Height="31" Opacity="0.5" HorizontalContentAlignment="Center" 
+                     materialDesign:HintAssist.Hint="Enter Password" FontFamily="Roboto Black" FontSize="22" FontWeight="Light"/>
+        <Button x:Name="Btn_Login" Content="LOG IN" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="56" Width="326"  FontSize="22"  Click="Button_Click" Cursor="Hand" OpacityMask="#FF0300AB" BorderThickness="2,2,2,2" ClipToBounds="True" BorderBrush="#FF0300AB" Foreground="#DDFFFFFF" Background="#FF0300AB"
+                materialDesign:ButtonAssist.CornerRadius="10"/>
+        <Label x:Name="Welcome_Label" Content="Welcome!" HorizontalAlignment="Center" Margin="0,280,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontFamily="Roboto Black" FontSize="36" Foreground="#FF0300AB" Width="224"/>
+
+
     </Grid>
+
+
+
 </Window>
