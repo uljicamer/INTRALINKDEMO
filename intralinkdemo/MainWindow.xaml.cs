@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.OleDb;
+using System.Data;
 
 namespace intralinkdemo
 {
@@ -26,9 +28,65 @@ namespace intralinkdemo
         }
 
       
+        OleDbConnection con_new = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = db_users_final.mdb");
+        OleDbCommand cmd_new = new OleDbCommand();
+        OleDbDataAdapter adapter_new = new OleDbDataAdapter();
+
+
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            con_new.Open();
+            string login = "SELECT * FROM tbl_users_final WHERE Username = '    " + txt_box_username.Text + "' and Password = '" + txt_box_password.Password.ToString() + "'      ";
+            cmd_new = new OleDbCommand(login,con_new);
+            OleDbDataReader read_data = cmd_new.ExecuteReader();
+
+
+            if (read_data.Read() == true)
+            {
+
+                if(txt_box_username.Text == "admin")
+                {
+
+
+                    new adminPanel().Show();
+                    this.Close();
+
+
+
+
+
+                }
+
+                else
+                {
+
+                    new userPanel().Show();
+                    this.Close();
+
+
+                }
+
+
+
+
+
+                
+
+
+
+
+
+            }
+
+
+            con_new.Close();
+
+
+
 
         }
 
@@ -36,5 +94,11 @@ namespace intralinkdemo
         {
             this.Close();
         }
+
+
+
+
+
+
     }
 }
