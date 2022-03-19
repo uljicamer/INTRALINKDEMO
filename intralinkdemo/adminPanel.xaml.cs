@@ -26,7 +26,7 @@ namespace intralinkdemo
             InitializeComponent();
 
 
-            data_grid_view.Visibility = Visibility.Hidden;
+            //data_grid_view.Visibility = Visibility.Hidden;
             
 
 
@@ -60,10 +60,10 @@ namespace intralinkdemo
                 OleDbDataAdapter admin_data_adapter_view = new OleDbDataAdapter(cmd_admin_view);
                 DataTable dt = new DataTable("tbl_users_final");
                 admin_data_adapter_view.Fill(dt);
-                data_grid_view.ItemsSource = dt.DefaultView;
+              //  data_grid_view.ItemsSource = dt.DefaultView;
                 admin_data_adapter_view.Update(dt);
 
-                data_grid_view.Visibility = Visibility.Visible;
+             //   data_grid_view.Visibility = Visibility.Visible;
                 connection_admin_view.Close();
 
 
