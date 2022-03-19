@@ -15,9 +15,16 @@
     <Grid>
         <Image HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="361" Source="/Images/intrlink_logo_blue.png"/>
         <Button x:Name="exitButtonAdminPanel" Content="EXIT" HorizontalAlignment="Left" Margin="10,642,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" BorderBrush="{x:Null}" FontWeight="Normal" Click="exitButtonAdminPanel_Click" />
-        <Expander x:Name="ExpanderUsers" HorizontalAlignment="Left" Height="229" Header="USERS" Margin="10,139,0,0" VerticalAlignment="Top" Width="180" Background="White" Foreground="#FF0300B5" FontFamily="Roboto Black" FontSize="36" FontWeight="Bold" IsExpanded="True">
-            <Button materialDesign:ButtonAssist.CornerRadius="10
-                    " x:Name="ExpanderUserButton" Content="See user list" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5" Click="ExpanderUserButton_Click"/>
+        <Expander x:Name="ExpanderUsers" HorizontalAlignment="Left" Height="257" Header="USERS" Margin="10,139,0,0" VerticalAlignment="Top" Width="180" Background="White" Foreground="#FF0300B5" FontFamily="Roboto Black" FontSize="36" FontWeight="Bold">
+            <StackPanel Height="204" Width="170">
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="ExpanderUserButton_Copy" Content="User list" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5" Click="ExpanderUserButton_Click" BorderBrush="{x:Null}" Width="110"/>
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="ExpanderAddUserButton" Content="Add Users" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5"  BorderBrush="{x:Null}" Width="110"/>
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="ExpanderRemoveUsersButton" Content="Remove Users" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5"  BorderBrush="{x:Null}" Width="110" FontSize="12"/>
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="ExpanderEditUsersButton" Content="Edit Users" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5"  BorderBrush="{x:Null}" Width="110" FontSize="12"/>
+
+            </StackPanel>
+
+
         </Expander>
         <DataGrid x:Name="data_grid_view" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="550,201,206,201"/>
 
