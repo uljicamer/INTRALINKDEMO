@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.OleDb;
-using System.Data;
+
 
 namespace intralinkdemo
 {
@@ -25,12 +25,15 @@ namespace intralinkdemo
         public MainWindow()
         {
             InitializeComponent();
+
+
+
+
+
         }
 
       
-        OleDbConnection con_new = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = db_users_final.mdb");
-        OleDbCommand cmd_new = new OleDbCommand();
-        OleDbDataAdapter adapter_new = new OleDbDataAdapter();
+        
 
 
 
@@ -39,11 +42,17 @@ namespace intralinkdemo
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+
+            OleDbConnection con_new = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = db_users_final.mdb");
+            OleDbCommand cmd_new = new OleDbCommand();
+            OleDbDataAdapter adapter_new = new OleDbDataAdapter();
+
+
             con_new.Open();
-            string login = "SELECT * FROM tbl_users_final WHERE Username = '    " + txt_box_username.Text + "' and Password = '" + txt_box_password.Password.ToString() + "'      ";
+            string login = "SELECT * FROM tbl_users_final WHERE Username = '" + txt_box_username.Text + "' and Password = '" + txt_box_password.Password.ToString() + "'  ";
             cmd_new = new OleDbCommand(login,con_new);
             OleDbDataReader read_data = cmd_new.ExecuteReader();
-
+              
 
             if (read_data.Read() == true)
             {
@@ -73,14 +82,24 @@ namespace intralinkdemo
 
 
 
-
                 
 
 
 
 
+            }
+
+
+            else
+            {
+
+                MessageBox.Show("Incorrect Username/Password.Try Again");
+
+
 
             }
+
+
 
 
             con_new.Close();
