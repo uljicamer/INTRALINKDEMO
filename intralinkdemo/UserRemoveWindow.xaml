@@ -9,24 +9,21 @@
         mc:Ignorable="d"
         Title="UserRemoveWindow" Height="493" Width="400"
         WindowStyle="None"
-        MaxHeight="493"
-        MaxWidth="400"
-        MinHeight="493"
-        MinWidth="400"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
         >
     <Grid Background="White">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="69*"/>
-            <ColumnDefinition Width="31*"/>
-        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black"/>
+
 
         <Image HorizontalAlignment="Left" Height="178" Margin="10,25,0,0" VerticalAlignment="Top" Width="216" Source="/Images/intrlink_logo_blue.png"/>
         <DataGrid x:Name="data_grid_remove" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="30,127,30,171" FontSize="10" Grid.ColumnSpan="2"/>
-        <TextBox materialDesign:HintAssist.Hint="Enter User ID" x:Name="UserIdBox"  HorizontalAlignment="Left" Margin="30,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Roboto Black"/>
-        <Button materialDesign:ButtonAssist.CornerRadius="10" Content="Remove user" Margin="189,347,0,114" Background="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Click="Button_Click"/>
-        <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="15,347,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" BorderBrush="{x:Null}" Grid.Column="1" Click="RefreshButton_Click"/>
+        <TextBox materialDesign:HintAssist.Hint="Enter User ID" x:Name="UserIdBox"  HorizontalAlignment="Left" Margin="30,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Roboto Black"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10" Content="Remove user" Margin="245,381,31,80" Background="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Click="Button_Click"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="30,385,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" BorderBrush="{x:Null}" Click="RefreshButton_Click"/>
         <Label x:Name="UserRemovalLabel" Content="User Removal" HorizontalAlignment="Left" Margin="258,21,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Grid.ColumnSpan="2"/>
-        <Button x:Name="ExitButton" Content="X" HorizontalAlignment="Left" Margin="73,16,0,0" VerticalAlignment="Top" Background="#FFEDEBEB" Foreground="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Grid.Column="1" Click="ExitButton_Click"/>
+        <Button x:Name="ExitButton" Content="X" HorizontalAlignment="Left" Margin="349,11,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Click="ExitButton_Click"/>
 
 
     </Grid>

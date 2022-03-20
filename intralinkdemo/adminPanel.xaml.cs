@@ -76,5 +76,10 @@ namespace intralinkdemo
 
 
         }
+
+        private void Add_Task_Click(object sender, RoutedEventArgs e)
+        {
+            new Add_Task_Window().Show();
+        }
     }
 }

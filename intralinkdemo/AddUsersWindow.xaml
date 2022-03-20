@@ -8,12 +8,12 @@
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-       MaxHeight="450"
-        MaxWidth="400"
-        MinHeight="450"
-        MinWidth="400"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
         Title="AddUsersWindow" Height="450" Width="400">
     <Grid>
+        <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black"/>
+
         <Image HorizontalAlignment="Left" Height="159" Margin="10,10,0,0" VerticalAlignment="Top" Width="161" Source="/Images/intrlink_logo_blue.png"/>
         <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Center" Margin="0,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" FontFamily="Roboto Black"
           materialDesign:HintAssist.Hint="Enter Username" HorizontalContentAlignment="Center"/>

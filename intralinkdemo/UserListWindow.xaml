@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         WindowStyle="None"
-        MaxHeight="420"
-        MaxWidth="800"
-        MinHeight="420"
-        MinWidth="800"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
         WindowStartupLocation="CenterScreen"
         Title="UserListWindow" Height="420" Width="800">
     <Grid>
+        <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black"/>
+
         <Image x:Name="IntraLinkLogo" HorizontalAlignment="Left" Height="242" Margin="10,10,0,0" VerticalAlignment="Top" Width="239" Source="/Images/intrlink_logo_blue.png"/>
         <DataGrid x:Name="data_grid_view" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,106,22,89" Background="{x:Null}" FontFamily="Roboto Black" Foreground="#DD000000" IsReadOnly="True"/>
         <Button x:Name="ExitButtonUserListWindow" Content="EXIT" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Click="ExitButtonUserListWindow_Click"/>

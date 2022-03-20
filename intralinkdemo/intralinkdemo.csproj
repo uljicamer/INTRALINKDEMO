@@ -66,6 +66,9 @@
     <Compile Include="AddUsersWindow.xaml.cs">
       <DependentUpon>AddUsersWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Add_Task_Window.xaml.cs">
+      <DependentUpon>Add_Task_Window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EditUserWindow.xaml.cs">
       <DependentUpon>EditUserWindow.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <DependentUpon>UserRemoveWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="AddUsersWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Add_Task_Window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

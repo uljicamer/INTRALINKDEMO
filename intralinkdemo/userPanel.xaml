@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="userPanel" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Current task" HorizontalAlignment="Left" Margin="145,97,0,0" VerticalAlignment="Top" Height="30" Width="82"/>
+        <Label x:Name="lbl_task" Content="" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Height="100" Width="262"/>
+
     </Grid>
 </Window>
