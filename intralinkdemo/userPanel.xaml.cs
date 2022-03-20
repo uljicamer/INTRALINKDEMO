@@ -23,7 +23,7 @@ namespace intralinkdemo
         {
             InitializeComponent();
 
-            lbl_task.Content = Add_Task_Window.set_value_user_task;
+            //lbl_task.Content = Add_Task_Window.set_value_user_task;
 
 
 

@@ -24,5 +24,6 @@
         </materialDesign:Card>
         <Button x:Name="exitButton" Content="X" HorizontalAlignment="Left" Margin="1294,15,0,0" VerticalAlignment="Top" Background="White" FontFamily="Roboto Black" BorderBrush="{x:Null}" Foreground="#FF0300B5" Height="33" Width="40" Click="exitButton_Click"/>
         <Label x:Name="LabelActiveTasks" Content="ACTIVE TASKS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Width="144" FontSize="16"/>
+        <CheckBox x:Name="CheckBoxTaskComplete" Content="Mark as complete" HorizontalAlignment="Left" Margin="306,182,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="52" Width="188" FontFamily="Roboto Black" Foreground="#FF0300B5" FontSize="16"/>
     </Grid>
 </Window>
