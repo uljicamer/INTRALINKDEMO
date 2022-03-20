@@ -12,18 +12,64 @@
         AllowsTransparency="True"
         Title="userPanel" Height="700" Width="1350">
     <Grid>
+        <Button x:Name="exitButton" Content="X" HorizontalAlignment="Left" Margin="1294,15,0,0" VerticalAlignment="Top" Background="White" FontFamily="Roboto Black" BorderBrush="{x:Null}" Foreground="#FF0300B5" Height="33" Width="40" Click="exitButton_Click"/>
+        <materialDesign:Chip
+  Content="Dan Danski"
+  Icon="D" Margin="228,55,0,613" IconBackground="#FF0300B5" RenderTransformOrigin="0.513,1.281" />
 
-        <Image HorizontalAlignment="Left" Height="360" Margin="10,10,0,0" VerticalAlignment="Top" Width="292" Source="/Images/intrlink_logo_blue.png"/>
         <materialDesign:Card
   Background="#FF0300B5"
   Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-  Padding="8"
-  UniformCornerRadius="6" Margin="30,154,1068,438">
-            <Label  HorizontalContentAlignment="Center" x:Name="lbl_text1" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Roboto Black" FontSize="18" Height="88" Width="233"/>
-
+  Padding="8" Margin="778,163,324,311">
+            <StackPanel Margin="0,0,-6,-240">
+                <TextBlock
+      Margin="16 16 12 8"
+      FontSize="16">
+    Notes
+                </TextBlock>
+                <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Content="Answer emails"/>
+                <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Content="Write a report"/>
+                <CheckBox
+      Margin="16 4 16 0"
+      Style="{StaticResource MaterialDesignUserForegroundCheckBox}" Content="Go to meeting"/>
+                <Separator
+      Style="{StaticResource MaterialDesignLightSeparator}" />
+                <StackPanel
+      Margin="8 0 8 8"
+      Orientation="Horizontal"
+      HorizontalAlignment="Right">
+                    <Button
+        HorizontalAlignment="Right"
+        Style="{StaticResource MaterialDesignToolForegroundButton}"
+        Width="30"
+        Padding="2 0 0 0"
+        materialDesign:RippleAssist.IsCentered="True">
+                        <materialDesign:PackIcon
+          Kind="CheckAll" />
+                    </Button>
+                </StackPanel>
+            </StackPanel>
         </materialDesign:Card>
-        <Button x:Name="exitButton" Content="X" HorizontalAlignment="Left" Margin="1294,15,0,0" VerticalAlignment="Top" Background="White" FontFamily="Roboto Black" BorderBrush="{x:Null}" Foreground="#FF0300B5" Height="33" Width="40" Click="exitButton_Click"/>
-        <Label x:Name="LabelActiveTasks" Content="ACTIVE TASKS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Width="144" FontSize="16"/>
-        <CheckBox x:Name="CheckBoxTaskComplete" Content="Mark as complete" HorizontalAlignment="Left" Margin="306,182,0,0" VerticalAlignment="Top" Background="{x:Null}" Height="52" Width="188" FontFamily="Roboto Black" Foreground="#FF0300B5" FontSize="16"/>
+        <DockPanel LastChildFill="False" Margin="0,0,1144,0" Background="#FF0300B5"/>
+        <Image Source="/Images/IntraLink-logos_transparent.png" Margin="-43,-66,1101,442"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10" Content="Projects" HorizontalAlignment="Left" Margin="22,298,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF0300B5" BorderBrush="{x:Null}" Height="66" Width="162" FontSize="22" FontFamily="Roboto Black"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10"  Content="Home" HorizontalAlignment="Left" Margin="22,213,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" FontFamily="Roboto Black" Foreground="#FF0300B5" Width="162" Height="66" FontSize="22"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10" Content="Chat" HorizontalAlignment="Left" Margin="22,389,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.027,0.328" Height="66" Width="162" FontFamily="Roboto Black" FontSize="22" Foreground="#FF0300B5" Background="White" BorderBrush="{x:Null}" Click="Button_Click"/>
+        <Button materialDesign:ButtonAssist.CornerRadius="10" Content="Help" HorizontalAlignment="Left" Margin="22,482,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF0300B5" FontFamily="Roboto Black" FontSize="22" BorderBrush="{x:Null}" Height="66" Width="162"/>
+        <Image HorizontalAlignment="Left" Height="302" Margin="254,135,0,0" VerticalAlignment="Top" Width="578" Source="/Images/stockgraph1.png"/>
+        <Label Content="Active tasks:" HorizontalAlignment="Left" Margin="1168,163,0,0" VerticalAlignment="Top" Foreground="#FF0300B5" FontFamily="Roboto Black" FontSize="24" Width="146"/>
+        <Label x:Name="Task_label" Content="- Interview new employees" HorizontalAlignment="Left" Margin="1096,213,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF0300B5" FontFamily="Roboto Black"/>
+        <Label x:Name="intracoin_label" Content="LinkCoin balance : 14" HorizontalAlignment="Left" Margin="1220,65,0,0" VerticalAlignment="Top" Foreground="#FF0300B5" FontFamily="Roboto Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="4" Margin="206,99,0,0" VerticalAlignment="Top" Width="1144" Fill="#FF0300B5"/>
+        <Label Content="Position: Human Resources" HorizontalAlignment="Left" Margin="685,62,0,0" VerticalAlignment="Top" Height="29" Width="186" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="296" Margin="279,404,0,0" VerticalAlignment="Top" Width="472" Source="/Images/graph.png"/>
+        <Image HorizontalAlignment="Left" Height="358" Margin="713,408,0,0" VerticalAlignment="Top" Width="378" Source="/Images/workplaceeff.png"/>
+
+
+
     </Grid>
 </Window>

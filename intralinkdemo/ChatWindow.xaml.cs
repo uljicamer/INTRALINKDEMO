@@ -15,28 +15,26 @@ using System.Windows.Shapes;
 namespace intralinkdemo
 {
     /// <summary>
-    /// Interaction logic for userPanel.xaml
+    /// Interaction logic for ChatWindow.xaml
     /// </summary>
-    public partial class userPanel : Window
+    public partial class ChatWindow : Window
     {
-        public userPanel()
+        public ChatWindow()
         {
             InitializeComponent();
-
-         Task_label.Content = Add_Task_Window.set_value_user_task;
-
-
-
-        }
-
-        private void exitButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new ChatWindow().Show();
+            this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            
+            ChatWindow1.AppendText(MessageBox.Text);
+
+
         }
     }
 }

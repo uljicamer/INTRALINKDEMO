@@ -1,0 +1,28 @@
+﻿<Window x:Class="intralinkdemo.Create_Teams_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:intralinkdemo"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        Title="Create_Teams_Window" Height="450" Width="800">
+    <Grid>
+        <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black">
+            <DataGrid x:Name="data_grid_view" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="9,110,438,133"/>
+        </Border>
+        <Image HorizontalAlignment="Left" Height="205" Margin="10,10,0,0" VerticalAlignment="Top" Width="212" Source="/Images/intrlink_logo_blue.png"/>
+        <Button x:Name="Refresh_Button" Content="Refresh list" HorizontalAlignment="Left" Margin="14,357,0,0" VerticalAlignment="Top" Background="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Click="Refresh_Button_Click"/>
+        <TextBox materialDesign:HintAssist.Hint="Enter user ID" HorizontalContentAlignment="Center" x:Name="txtbox_userid" HorizontalAlignment="Left" Margin="566,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Roboto Black"/>
+        <TextBox materialDesign:HintAssist.Hint="Enter team" HorizontalContentAlignment="Center"  x:Name="txtbox_teamname" HorizontalAlignment="Left" Margin="566,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Roboto Black"/>
+        <Button x:Name="AddToTeamButton" Content="Add user to team" HorizontalAlignment="Left" Margin="581,269,0,0" VerticalAlignment="Top" Background="#FF0300B5" BorderBrush="{x:Null}" FontFamily="Roboto Black" Click="AddToTeamButton_Click"/>
+        <Button x:Name="exitButton" Content="X" HorizontalAlignment="Left" Margin="749,10,0,0" VerticalAlignment="Top" Background="White" Foreground="#FF0300B5" BorderBrush="{x:Null}" Height="29" Width="41" Click="exitButton_Click"/>
+
+
+
+    </Grid>
+</Window>

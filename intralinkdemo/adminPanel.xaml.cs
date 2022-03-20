@@ -93,5 +93,15 @@ namespace intralinkdemo
         {
             
         }
+
+        private void Create_Teams_Click(object sender, RoutedEventArgs e)
+        {
+            new Create_Teams_Window().Show();
+        }
+
+        private void Teams_Overview_Click(object sender, RoutedEventArgs e)
+        {
+            new Teams_Overview_Window().Show();
+        }
     }
 }

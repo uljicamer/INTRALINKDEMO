@@ -26,21 +26,22 @@
 
 
         </Expander>
-        <Expander x:Name="ExpanderTeams" HorizontalAlignment="Left" Height="156" Header="TEAMS" Margin="10,311,0,0" VerticalAlignment="Top" Width="156" Background="{x:Null}" Foreground="#FF0300B5" FontFamily="Roboto Black" FontWeight="Bold" IsExpanded="True">
-            <StackPanel Height="100" Margin="10,0,10,0">
-                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Create_Teams" Content="Create Teams" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118"/>
-                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Edit_Teams" Content="Edit Teams" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118"/>
-                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Teams_Overview" Content="Teams Overview" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" FontSize="11"/>
+        <Expander x:Name="ExpanderTeams" HorizontalAlignment="Left" Height="123" Header="TEAMS" Margin="10,311,0,0" VerticalAlignment="Top" Width="156" Background="{x:Null}" Foreground="#FF0300B5" FontFamily="Roboto Black" FontWeight="Bold" IsExpanded="True">
+            <StackPanel Height="73" Margin="10,0,10,0">
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Create_Teams" Content="Create Teams" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" Click="Create_Teams_Click"/>
+                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Teams_Overview" Content="Teams Overview" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" FontSize="11" Click="Teams_Overview_Click"/>
 
             </StackPanel>
         </Expander>
-        <Expander HorizontalAlignment="Left" Height="167" Header="TASKS&#xD;&#xA;" Margin="10,472,0,0" VerticalAlignment="Top" Width="156" Foreground="#FF0300B5" FontFamily="Roboto Black" FontWeight="Bold" IsExpanded="True" Background="{x:Null}">
+        <Expander HorizontalAlignment="Left" Height="167" Header="TASKS&#xD;&#xA;" Margin="10,439,0,0" VerticalAlignment="Top" Width="156" Foreground="#FF0300B5" FontFamily="Roboto Black" FontWeight="Bold" IsExpanded="True" Background="{x:Null}">
             <StackPanel Height="97" Width="146">
                 <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Add_Task" Content="Add Task" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" FontSize="11" Click="Add_Task_Click"/>
-                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Edit_Task" Content="Edit Task" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" FontSize="11"/>
-                <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="Remove_Task" Content="Remove Task" FontFamily="Roboto Black" Background="#FF0300B5" BorderBrush="{x:Null}" Width="118" FontSize="11"/>
             </StackPanel>
         </Expander>
+        <Image HorizontalAlignment="Left" Height="318" Margin="370,91,0,0" VerticalAlignment="Top" Width="400" Source="/Images/graph.png"/>
+        <Image HorizontalAlignment="Left" Height="356" Margin="872,116,0,0" VerticalAlignment="Top" Width="376" Source="/Images/graph2.png"/>
+        <Image HorizontalAlignment="Left" Height="289" Margin="370,402,0,0" VerticalAlignment="Top" Width="344" Source="/Images/workplaceeff.png"/>
+        <Image HorizontalAlignment="Left" Height="294" Margin="872,377,0,0" VerticalAlignment="Top" Width="376" Source="/Images/chartpravi.png"/>
 
 
 

@@ -1,0 +1,24 @@
+﻿<Window x:Class="intralinkdemo.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:intralinkdemo"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="ChatWindow" Height="450" Width="800">
+    <Grid>
+        <Border CornerRadius="10" BorderThickness="1" BorderBrush="Black"/>
+        <Image HorizontalAlignment="Left" Height="181" Margin="10,10,0,0" VerticalAlignment="Top" Width="257" Source="/Images/intrlink_logo_blue.png"/>
+        <TextBox x:Name="MessageBox" materialDesign:HintAssist.Hint="Enter your message" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="0,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="366" Height="58" FontFamily="Roboto Black"/>
+        <Button Content="SEND" HorizontalAlignment="Left" Margin="648,356,0,0" VerticalAlignment="Top" Height="58" Width="113" Background="#FF0300B5" BorderBrush="{x:Null}" Click="Button_Click_1"/>
+        <TextBox x:Name="ChatWindow1" TextWrapping="Wrap" Margin="150,103,150,103" FontFamily="Roboto Black" BorderBrush="#FF0300B5" BorderThickness="1,1,1,1" SnapsToDevicePixels="True"/>
+        <Button Content="X" HorizontalAlignment="Left" Margin="749,10,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" Foreground="#FF0300B5" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>
