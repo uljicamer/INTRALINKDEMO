@@ -28,7 +28,7 @@
         <Label x:Name="Registration_Label" Content="User Edit" HorizontalAlignment="Left" Margin="682,-2,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Height="36" Width="194"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="750,3,0,0" VerticalAlignment="Top" Background="White" BorderBrush="{x:Null}" FontFamily="Roboto Black" Height="26" Width="40" Foreground="#FF0300B5" Click="Button_Click"/>
         <TextBox materialDesign:HintAssist.Hint="ENTER USER ID" HorizontalContentAlignment="center" x:Name="UserIDEDIT" HorizontalAlignment="Left" Margin="421,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="84" FontFamily="Roboto Black" TextChanged="UserIDEDIT_TextChanged"/>
-        <Button Content="Confirm" HorizontalAlignment="Left" Margin="549,322,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black"/>
+        <Button Content="Confirm" HorizontalAlignment="Left" Margin="549,322,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" Click="Button_Click_1"/>
         <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="707,322,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" Click="ClearButton_Click"/>
     </Grid>
 </Window>

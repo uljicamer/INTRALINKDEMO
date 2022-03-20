@@ -51,6 +51,7 @@ namespace intralinkdemo
 
         private void UserIDEDIT_TextChanged(object sender, TextChangedEventArgs e)
         {
+        
 
 
             OleDbConnection con_admin_edit = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_users_final.mdb");
@@ -60,7 +61,7 @@ namespace intralinkdemo
 
             if(UserIDEDIT.Text != "") { 
 
-            OleDbCommand cmd = new OleDbCommand("SELECT [Username],[Password],[Name_User] FROM tbl_users_final WHERE [ID]="+int.Parse(UserIDEDIT.Text)+"", con_admin_edit);
+            OleDbCommand cmd = new OleDbCommand("SELECT [Username],[Password],[Name_User],[Surname_User],[Email],[Position],[Pay] FROM tbl_users_final WHERE [ID]=" + int.Parse(UserIDEDIT.Text)+"", con_admin_edit);
             OleDbDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -69,6 +70,11 @@ namespace intralinkdemo
                 UserNameTextBoxEDIT.Text = reader.GetValue(0).ToString();
                 UserAddPasswordFieldEDIT.Text = reader.GetValue(1).ToString();
                 Name_User_Textbox.Text = reader.GetValue(2).ToString();
+                Surname_Textbox.Text=reader.GetValue(3).ToString();
+                Email_textbox.Text=reader.GetValue(4).ToString();
+                Position_Textbox.Text=reader.GetValue(5).ToString();
+                Salary_textbox.Text=reader.GetValue(6).ToString();
+                
 
 
 
@@ -80,6 +86,46 @@ namespace intralinkdemo
             con_admin_edit.Close();
 
             }
+
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+
+            OleDbConnection connection_admin_update1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=db_users_final.mdb");
+            OleDbCommand command_admin_update1 = new OleDbCommand();
+            OleDbDataAdapter data_adapter_admin_update1 = new OleDbDataAdapter();
+
+            try
+            {
+
+
+
+                connection_admin_update1.Open();
+                string Query_update1 = "UPDATE tbl_users_final SET [Username]=   '" + this.UserNameTextBoxEDIT.Text + "', [Password]='" + this.UserAddPasswordFieldEDIT.Text + "', [Name_User]='" + this.Name_User_Textbox.Text + "',[Surname_User]='" + this.Surname_Textbox.Text + "', [Email]='" + this.Email_textbox.Text + "', [Position]='" + this.Position_Textbox.Text + "',[Pay]='" + this.Salary_textbox.Text + "'  where [ID]= " + this.UserIDEDIT.Text + "    ";
+                OleDbCommand cmd_admin_update1 = new OleDbCommand(Query_update1, connection_admin_update1);
+                cmd_admin_update1.ExecuteNonQuery();
+                MessageBox.Show("Updated");
+
+
+                connection_admin_update1.Close();
+
+            }
+
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show(ex.Message);
+
+            }
+
+
+
+
+
 
 
         }
