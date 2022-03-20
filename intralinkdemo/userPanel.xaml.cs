@@ -22,6 +22,11 @@ namespace intralinkdemo
         public userPanel()
         {
             InitializeComponent();
+
+            lbl_task.Content = Add_Task_Window.set_value_user_task;
+
+
+
         }
 
         private void exitButton_Click(object sender, RoutedEventArgs e)
