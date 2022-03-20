@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.OleDb;
 using System.Data;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace intralinkdemo
 {
@@ -80,6 +82,16 @@ namespace intralinkdemo
         private void Add_Task_Click(object sender, RoutedEventArgs e)
         {
             new Add_Task_Window().Show();
+        }
+
+        private void w(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Chart_Stackpanel_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

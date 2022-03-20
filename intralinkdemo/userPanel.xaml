@@ -5,10 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:intralinkdemo"
         mc:Ignorable="d"
-        Title="userPanel" Height="450" Width="800">
+        WindowStyle="None"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        Title="userPanel" Height="700" Width="1350">
     <Grid>
-        <Label Content="Current task" HorizontalAlignment="Left" Margin="145,97,0,0" VerticalAlignment="Top" Height="30" Width="82"/>
-        <Label x:Name="lbl_task" Content="" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Height="100" Width="262"/>
 
+        <Image HorizontalAlignment="Left" Height="360" Margin="10,10,0,0" VerticalAlignment="Top" Width="292" Source="/Images/intrlink_logo_blue.png"/>
+        <materialDesign:Card
+  Background="#FF0300B5"
+  Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+  Padding="8"
+  UniformCornerRadius="6" Margin="30,154,1068,438">
+            <Label x:Name="lbl_text1" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#DDFFFFFF" FontFamily="Roboto Black" FontSize="18" Height="88" Width="233"/>
+
+        </materialDesign:Card>
+        <Button x:Name="exitButton" Content="X" HorizontalAlignment="Left" Margin="1294,15,0,0" VerticalAlignment="Top" Background="White" FontFamily="Roboto Black" BorderBrush="{x:Null}" Foreground="#FF0300B5" Height="33" Width="40" Click="exitButton_Click"/>
+        <Label x:Name="LabelActiveTasks" Content="ACTIVE TASKS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top" FontFamily="Roboto Black" Foreground="#FF0300B5" Width="144" FontSize="16"/>
     </Grid>
 </Window>

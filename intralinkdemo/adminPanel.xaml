@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:intralinkdemo"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
@@ -14,7 +14,7 @@
         ResizeMode="NoResize">
     <Grid>
         <Image HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="360" Source="/Images/intrlink_logo_blue.png"/>
-        <Button x:Name="exitButtonAdminPanel" Content="EXIT" HorizontalAlignment="Left" Margin="1262,35,0,0" VerticalAlignment="Top" Background="#FF0300B5" FontFamily="Roboto Black" BorderBrush="{x:Null}" FontWeight="Bold" Click="exitButtonAdminPanel_Click" />
+        <Button x:Name="exitButtonAdminPanel" Content="X" HorizontalAlignment="Left" Margin="1294,16,0,0" VerticalAlignment="Top" Background="White" FontFamily="Roboto Black" BorderBrush="{x:Null}" FontWeight="Bold" Click="exitButtonAdminPanel_Click" Foreground="#FF0300B5" />
         <Expander x:Name="ExpanderUsers" HorizontalAlignment="Left" Height="182" Header="USERS" Margin="10,129,0,0" VerticalAlignment="Top" Width="156" Background="{x:Null}" Foreground="#FF0300B5" FontFamily="Roboto Black" FontSize="36" FontWeight="Bold" IsExpanded="True">
             <StackPanel Height="128" Width="170">
                 <Button materialDesign:ButtonAssist.CornerRadius="10" x:Name="ExpanderUserButton_Copy" Content="User list" HorizontalAlignment="Left" Margin="21,0,0,0" FontFamily="Roboto Black" Background="#FF0300B5" Click="ExpanderUserButton_Click" BorderBrush="{x:Null}" Width="110"/>

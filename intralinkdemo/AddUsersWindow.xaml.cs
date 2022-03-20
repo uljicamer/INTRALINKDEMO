@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.OleDb;
 using System.Data;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace intralinkdemo
 {
