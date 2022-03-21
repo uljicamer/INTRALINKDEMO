@@ -1,9 +1,10 @@
 VAZNO!
 
 
+
 Prilikom cloneanja skinuti db_users_final.accdb i db_users_final.mdb i sacuvati ih u repository location\bin\debug! npr (c:\users\source\repositoryname\bin\debug).
 
-Program mozete pokrenuti tako sto cete cloneovati repo i buildat ga unutar visualstudia (potrebno imati .net) (preporuceno)
+Program mozete pokrenuti tako sto cete cloneovati repo i buildat ga unutar visualstudia22 (potrebno imati .net) (preporuceno)
 ili 
 
 u repo folderu (npr. c:\users\source\repositoryname\bin\debug )
